@@ -1,0 +1,119 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655010446560' stop='1655010507472'>
+    <name>Demo feature: Run first demo feature</name>
+    <title>Demo feature: Run first demo feature</title>
+    <test-cases>
+        <test-case start='1655010446562' status='passed' stop='1655010446566'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1655010446567' status='passed' stop='1655010447448'>
+            <name>Given A web page is opened</name>
+            <title>Given A web page is opened</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655010446573' status='passed' stop='1655010447434'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='44271cac-6b93-4621-8220-35263cd56967-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655010447435' status='passed' stop='1655010447445'>
+                    <name>POST /session/:sessionId/timeouts</name>
+                    <title>POST /session/:sessionId/timeouts</title>
+                    <attachments>
+                        <attachment title='Request' source='210dd3a8-9bac-4977-991a-597f8866eab1-attachment.json' type='application/json' size='44'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655010447448' status='broken' stop='1655010507469'>
+            <name>When Perform web interactions</name>
+            <title>When Perform web interactions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655010447449' status='passed' stop='1655010447465'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='8583fe46-6f05-4485-9154-e8e9b30d400a-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655010447470' status='passed' stop='1655010447506'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='eb227120-9211-4033-b300-315963ccb989-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='bee2011f-7728-408f-95d3-05c9809c027e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655010447525' status='passed' stop='1655010447584'>
+                    <name>POST /session/:sessionId/element/6e1fdeac-0089-4801-b799-10c3333c1b6b/clear</name>
+                    <title>POST /session/:sessionId/element/6e1fdeac-0089-4801-b799-10c3333c1b6b/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655010447592' status='passed' stop='1655010447654'>
+                    <name>POST /session/:sessionId/element/6e1fdeac-0089-4801-b799-10c3333c1b6b/value</name>
+                    <title>POST /session/:sessionId/element/6e1fdeac-0089-4801-b799-10c3333c1b6b/value</title>
+                    <attachments>
+                        <attachment title='Request' source='08ce5f33-ac95-4d57-b1ab-e6b9080b143a-attachment.json' type='application/json' size='21'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function timed out, ensure the promise resolves within 60000 milliseconds</message>
+                <stack-trace>Error: function timed out, ensure the promise resolves within 60000 milliseconds
+                    at Timeout.&lt;anonymous> (C:\GIT\WDIOCucumber\node_modules\@cucumber\cucumber\src\time.ts:53:14)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1655010507470' status='passed' stop='1655010507471'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

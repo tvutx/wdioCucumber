@@ -1,0 +1,172 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655274726203' stop='1655274738428'>
+    <name>Demo feature: Run first demo feature</name>
+    <title>Demo feature: Run first demo feature</title>
+    <test-cases>
+        <test-case start='1655274726206' status='passed' stop='1655274726210'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1655274726211' status='passed' stop='1655274729580'>
+            <name>Given Google page is opened</name>
+            <title>Given Google page is opened</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655274726219' status='passed' stop='1655274729577'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='efb9169b-0363-499a-8f4c-b666becf806c-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655274729580' status='passed' stop='1655274733193'>
+            <name>When Search with WDIO automation</name>
+            <title>When Search with WDIO automation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655274729587' status='passed' stop='1655274729664'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='453cadcb-b543-4624-8d48-33e634597f9a-attachment.json' type='application/json' size='55'/>
+                        <attachment title='Response' source='1005af33-a4f8-4957-a5d3-79f5e876c1dc-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655274729680' status='passed' stop='1655274729760'>
+                    <name>POST /session/:sessionId/element/18e33512-b8ad-45e4-8304-9dfe8541389f/clear</name>
+                    <title>POST /session/:sessionId/element/18e33512-b8ad-45e4-8304-9dfe8541389f/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655274729776' status='passed' stop='1655274730002'>
+                    <name>POST /session/:sessionId/element/18e33512-b8ad-45e4-8304-9dfe8541389f/value</name>
+                    <title>POST /session/:sessionId/element/18e33512-b8ad-45e4-8304-9dfe8541389f/value</title>
+                    <attachments>
+                        <attachment title='Request' source='385aa3ab-e64c-4509-a744-6f061d17787a-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655274730004' status='passed' stop='1655274733179'>
+                    <name>POST /session/:sessionId/actions</name>
+                    <title>POST /session/:sessionId/actions</title>
+                    <attachments>
+                        <attachment title='Request' source='08777591-1ea6-4c9f-a06b-9573da002bd2-attachment.json' type='application/json' size='249'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655274733179' status='passed' stop='1655274733191'>
+                    <name>DELETE /session/:sessionId/actions</name>
+                    <title>DELETE /session/:sessionId/actions</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655274733193' status='passed' stop='1655274738335'>
+            <name>Then Click on the first result</name>
+            <title>Then Click on the first result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655274733198' status='passed' stop='1655274733256'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c2a317fd-edb2-4d36-89e0-75f5c4251a43-attachment.json' type='application/json' size='64'/>
+                        <attachment title='Response' source='18750a92-93c1-4db0-ac33-4ead2771052d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655274733266' status='passed' stop='1655274738331'>
+                    <name>POST /session/:sessionId/element/083d5b42-a256-4a87-ae64-7db7ae8baa25/click</name>
+                    <title>POST /session/:sessionId/element/083d5b42-a256-4a87-ae64-7db7ae8baa25/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655274738335' status='broken' stop='1655274738420'>
+            <name>And URL should match https://webdriver.io/</name>
+            <title>And URL should match https://webdriver.io/</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655274738339' status='broken' stop='1655274738418'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: no such window: target window already closed</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=102.0.5005.115)
+                    at getErrorFromResponseBody (C:\GIT\WDIOCucumber\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\GIT\WDIOCucumber\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (C:\GIT\WDIOCucumber\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async World.&lt;anonymous> (C:\GIT\WDIOCucumber\test\features\step-definitions\demo.ts:23:15)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1655274738421' status='passed' stop='1655274738425'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
