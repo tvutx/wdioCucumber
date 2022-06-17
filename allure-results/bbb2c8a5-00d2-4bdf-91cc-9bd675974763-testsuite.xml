@@ -1,0 +1,158 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655506308799' stop='1655506329584'>
+    <name>Tax calulations: Calculate tax</name>
+    <title>Tax calulations: Calculate tax</title>
+    <test-cases>
+        <test-case start='1655506308799' status='passed' stop='1655506308801'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1655506308801' status='passed' stop='1655506309443'>
+            <name>Given I open the site</name>
+            <title>Given I open the site</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655506308803' status='passed' stop='1655506309431'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b0393358-6b47-4f24-9df4-7f5dd0dbab4a-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655506309431' status='passed' stop='1655506309440'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='5f5303bd-e33a-4452-a5f7-6a29b8200b3a-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655506309443' status='passed' stop='1655506309520'>
+            <name>And I'm on the product page</name>
+            <title>And I'm on the product page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655506309445' status='passed' stop='1655506309461'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='8ba1a15a-5d96-4c18-a5c7-000b5dfe5c31-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='394477ba-9ed8-45d2-900e-ae5503288a02-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655506309468' status='passed' stop='1655506309480'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='31504eb9-44aa-41c3-86bc-3bb09972893d-attachment.json' type='application/json' size='8703'/>
+                        <attachment title='Response' source='c7ca84e6-719c-40d7-b8f1-614fcb0e2fde-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655506309483' status='passed' stop='1655506309495'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a1c654af-7f1c-4451-8301-fac1df17d911-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='af69a34d-73cf-4174-859b-c00d85448ff7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655506309498' status='passed' stop='1655506309518'>
+                    <name>GET /session/:sessionId/element/77c9c92d-c0c9-4508-ae6f-45cb6f650968/text</name>
+                    <title>GET /session/:sessionId/element/77c9c92d-c0c9-4508-ae6f-45cb6f650968/text</title>
+                    <attachments>
+                        <attachment title='Response' source='8072e923-f109-472d-a98a-254788ff8270-attachment.json' type='application/json' size='26'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1655506309520' status='broken' stop='1655506329583'>
+            <name>When I enter one in the zebra quantity box</name>
+            <title>When I enter one in the zebra quantity box</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655506309520' status='passed' stop='1655506319550'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='92c60de0-e7a5-459b-9520-4ef5641e34e3-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='e27f5dfa-7352-458f-a582-d557d459e0a5-attachment.json' type='application/json' size='1021'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655506319552' status='passed' stop='1655506329579'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='3ef591a9-6177-4e63-80c3-ced3491671d8-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='59bf1a73-232f-421d-9b46-a1853d74ada9-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call setValue on element with selector "line_item_quantity_zebra" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "line_item_quantity_zebra" because element wasn't found
+                    at implicitWait (C:\git\wdioCucumber\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Element.elementErrorHandlerCallbackFn (C:\git\wdioCucumber\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\git\wdioCucumber\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async World.&lt;anonymous> (C:\git\wdioCucumber\test\steps\productSteps.ts:10:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1655506329583' status='passed' stop='1655506329584'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
