@@ -1,6 +1,7 @@
 Feature: Tax calulations
+
     @demo
-    Scenario: Calculate tax
+    Scenario: Verify CA tax calculation
         Given I open the site
         And I'm on the product page
         When I enter one in the zebra quantity box
@@ -13,3 +14,10 @@ Feature: Tax calulations
         And I verify the subtotal is "$85.00"
         And I verify the taxes is "$6.80"
         And I verify the total is "$91.80"
+
+    @demo
+    Scenario: Checkout with no state selected
+        Given I open the site
+        And I'm on the product page
+        When I click on the checkout button
+        Then I verify the checkout error message "We're sorry, but something went wrong."

@@ -4,6 +4,7 @@ class ConfirmationPage {
     get subtotal () {return $(`#subtotal`)}
     get taxes () {return $(`#taxes`)}
     get total () {return $(`#total`)}
+    get errorMessage () { return $(`div > h1`)}
     // Page actions
 }
 

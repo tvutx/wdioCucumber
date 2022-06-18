@@ -23,3 +23,8 @@ Then(/^I verify the total is "([^"]*)"$/, async (total) => {
     let sub = await (await confirmationPage.total).getText()
     console.log(`*************************${sub}`)
 })
+
+Then(/^I verify the checkout error message "([^"]*)"$/, async (errorMessage) => {
+    await expect(confirmationPage.errorMessage).toHaveTextContaining(errorMessage)
+    
+})
