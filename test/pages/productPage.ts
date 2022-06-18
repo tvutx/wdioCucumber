@@ -17,8 +17,16 @@ class ProductPage {
                 await expect(this.pageTile).toHaveTextContaining("Welcome To Jungle Socks!")
         }
 
-        async enterQuantity(num: number){
-                await this.zebraQuantity.waitForDisplayed()
+        async enterQuantityByProduct(num: number, productName: string){
+                let product =  $(`#line_item_quantity_${productName}`)
+                await product.waitForDisplayed()
+                await product.setValue(num)
+        }
+
+        async selectState(state: string){
+                let st = $(`select[name^=state] > option[value^=${state}]`)
+                await st.waitForDisplayed()
+                await st.click()
         }
 }
 

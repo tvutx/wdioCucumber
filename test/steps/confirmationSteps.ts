@@ -9,22 +9,22 @@ Then(/^I'm on the confirm order page$/, async () => {
 Then(/^I verify the subtotal is "([^"]*)"$/, async (subtotal) => {
     await expect(confirmationPage.subtotal).toHaveTextContaining(subtotal)
     let sub = await (await confirmationPage.subtotal).getText()
-    console.log(`*************************${sub}`)
+    console.log(`************************* SUBTOTAL: ${sub}`)
 })
 
 Then(/^I verify the taxes is "([^"]*)"$/, async (tax) => {
     await expect(confirmationPage.taxes).toHaveTextContaining(tax)
-    let sub = await (await confirmationPage.taxes).getText()
-    console.log(`*************************${sub}`)
+    let taxes = await (await confirmationPage.taxes).getText()
+    console.log(`************************* TAXES: ${taxes}`)
 })
 
 Then(/^I verify the total is "([^"]*)"$/, async (total) => {
     await expect(confirmationPage.total).toHaveTextContaining(total)
-    let sub = await (await confirmationPage.total).getText()
-    console.log(`*************************${sub}`)
+    let tl = await (await confirmationPage.total).getText()
+    console.log(`************************* TOTAL: ${tl}`)
 })
 
 Then(/^I verify the checkout error message "([^"]*)"$/, async (errorMessage) => {
     await expect(confirmationPage.errorMessage).toHaveTextContaining(errorMessage)
-    
+
 })
