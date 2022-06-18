@@ -12,7 +12,7 @@ When(/^I enter "([^"]*)" in the "([^"]*)" quantity box$/, async (quantity, produ
     await browser.pause(1000) // Can remove this pause. It's for the viewer.
 })
 
-When(/^I click select "([^"]*)" from the dropdown$/, async (stateAbrv) => {
+When(/^I select "([^"]*)" from the dropdown$/, async (stateAbrv) => {
     await productPage.selectState(stateAbrv)
     await browser.pause(1000) // Can remove this pause. It's for the viewer.
 })

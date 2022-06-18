@@ -8,7 +8,7 @@ Feature: Tax calulations
         And I enter "1" in the "lion" quantity box
         And I enter "1" in the "elephant" quantity box
         And I enter "1" in the "giraffe" quantity box
-        And I click select "CA" from the dropdown
+        And I select "CA" from the dropdown
         And I click on the checkout button
         Then I'm on the confirm order page
         And I verify the subtotal is "$85.00"
