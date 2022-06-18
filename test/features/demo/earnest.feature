@@ -4,11 +4,11 @@ Feature: Tax calulations
     Scenario: Verify CA tax calculation
         Given I open the site
         And I'm on the product page
-        When I enter one in the zebra quantity box
-        And I enter one in the lion quantity box
-        And I enter one in the elephant quantity box
-        And I enter one in the giraffe quantity box
-        And I click select California from the dropdown
+        When I enter "1" in the "zebra" quantity box
+        And I enter "1" in the "lion" quantity box
+        And I enter "1" in the "elephant" quantity box
+        And I enter "1" in the "giraffe" quantity box
+        And I click select "CA" from the dropdown
         And I click on the checkout button
         Then I'm on the confirm order page
         And I verify the subtotal is "$85.00"

@@ -6,8 +6,10 @@ Given(/^I'm on the product page$/, async () => {
     await productPage.validateTitle()
 })
 
-When(/^I enter one in the zebra quantity box$/, async () => {
+When(/^I enter "([^"]*)" in the "([^"]*)" quantity box$/, async (quantity, product) => {
     await productPage.zebraQuantity.setValue(1)
+    await (await $(`#line_item_quantity_${product}`)).setValue(quantity)
+    // await browser.pause(2000)
 })
 
 When(/^I enter one in the lion quantity box$/, async () => {
@@ -22,13 +24,12 @@ When(/^I enter one in the giraffe quantity box$/, async () => {
     await productPage.giraffeQuantity.setValue(1)
 })
 
-When(/^I click select California from the dropdown$/, async () => {
-    // await productPage.stateDropdown.click()
-    await productPage.selectCaState.click()
-    // await browser.keys("Enter")
+When(/^I click select "([^"]*)" from the dropdown$/, async (stateAbrv) => {
+    await (await $(`select[name^=state] > option[value^=${stateAbrv}]`)).click()
+    await browser.pause(2000)
 })
 
 When(/^I click on the checkout button$/, async () => {
     await productPage.checkoutBtn.click()
-    await browser.pause(5000)
+    await browser.pause(2000)
 })
